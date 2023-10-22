@@ -1,0 +1,18 @@
+version: '3.8'
+services:
+  movies:
+    image: krish150/paytmmovies:latest
+    ports:
+      - '91:80'
+  train:
+    image: krish150/paytmtrain:latest
+    ports:
+      - '92:80'
+  dth:
+    image: krish150/paytmdth:latest
+    ports:
+      - '93:80'
+  recharge:
+    image: krish150/paytmrecharge:latest
+    ports:
+      - '94:80'
